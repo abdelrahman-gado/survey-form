@@ -9,29 +9,29 @@
     <title>Survey Form</title>
 </head>
 <body>
-    <div>
+    <div class="main-div">
         <header>
             <h1 id="title">freeCodeCamp Survey Form</h1>
             <p id="description">Thank you for taking the time to help us improve the platform</p>
         </header>
         <form id="survey-form">
             <div class="survey-item">
-                <label id="name-label" for="name">Name</label>
-                <input id="name" class="form-input" name="name" type="text" placeholder="Enter your name" required>
+                <label for="name" id="name-label">Name</label>
+                <input id="name" class="form-input" type="text" placeholder="Enter your name" required>
             </div>
             
             <div class="survey-item">
-                <label id="email-label" for="email">Email</label>
-                <input id="email" class="form-input" name="email" type="email" placeholder="Enter your Email" required>
+                <label for="email" id="email-label" class="flex-label">Email</label>
+                <input id="email" class="form-input" type="email" placeholder="Enter your Email" required>
             </div>
             
             <div class="survey-item">
-                <lable  id="number-label" for="number">Age<span>(optional)</span></lable>
-                <input id="number" name="age" class="form-input" type="number" min="10" max="99" placeholder="Age">
+                <label for="number" id="number-label">Age<span>(optional)</span></label>
+                <input id="number" class="form-input" type="number" min="10" max="99" placeholder="Age">
             </div>
             
             <div class="survey-item">
-                <label for="dropdown"><p>Which option best describes your current role?</p></label>
+                <label for="dropdown"><p class="flex-label">Which option best describes your current role?</p></label>
                 <select id="dropdown" name="role" class="form-input" required>
                     <option value="" disabled selected>Select current role</option>
                     <option value="student">Student</option>
@@ -42,21 +42,21 @@
                 </select>
             </div>
             <div class="survey-item">
-                <lable for="radio-group1"><p>Would you recommend freeCodeCamp to a friend?</p></lable>
+                <label for="radio-group1"><p class="flex-label">Would you recommend freeCodeCamp to a friend?</p></lable>
                 <fieldset id="radio-group1">
-                    <label>
+                    <label class="flex-label">
                         <input type="radio" class="radio-input" name="radio-group1" value="definitely" checked>Definitely
                     </label>
-                    <label>
+                    <label class="flex-label">
                         <input type="radio" class="radio-input" name="radio-group1" value="maybe">Maybe
                     </label>
-                    <label>
+                    <label class="flex-label">
                         <input type="radio" class="radio-input" name="radio-group1" value="not-sure">Not sure
                     </label>
                 </fieldset>
             </div>
             <div class="survey-item">
-                <label for="fav-feature"><p>What is your favorite feature of freeCodeCamp?</p></label>
+                <label for="fav-feature"><p class="flex-label">What is your favorite feature of freeCodeCamp?</p></label>
                 <select id="fav-feature" class="form-input" required>
                     <option value="" selected disabled>Select an option</option>
                     <option value="challenges">Challenges</option>
@@ -66,50 +66,56 @@
                 </select>
             </div>
             <div class="survey-item">
-                <lable for="check-group1"><p>What would you like to see improved?<span>(check all that apply)</span></p></lable>
+                <label for="check-group1"><p class="flex-label">What would you like to see improved?<span>(check all that apply)</span></p></lable>
                 <fieldset id="check-group1">
                     
-                    <lable>
+                    <label class="flex-label">
                         <input class="check-input" type="checkbox" value="front-end-projects" name="check-group1">Front-end Projects
-                    </lable>
-                    <lable>
+                    </label>
+
+                    <label class="flex-label">
                         <input class="check-input" type="checkbox" value="back-end-projects" name="check-group1">Back-end Projects
-                    </lable>
-                    <lable>
+                    </label>
+
+                    <label class="flex-label">
                         <input class="check-input" type="checkbox" value="data-visualization" name="check-group1">Data Visualization
-                    </lable>
-                    <lable>
+                    </label>
+
+                    <label class="flex-label">
                         <input class="check-input" type="checkbox" value="challenges" name="check-group1">Challenges
-                    </lable>
-                    <lable>
+                    </label>
+
+                    <label class="flex-label">
                         <input class="check-input" type="checkbox" value="open-source-community" name="check-group1">Open Source Community
-                    </lable>
-                    <lable>
+                    </label>
+
+                    <label class="flex-label">
                         <input class="check-input" type="checkbox" value="gitter-help-rooms" name="check-group1">Gitter help rooms
-                    </lable>
-                    <lable>
+                    </label>
+                    
+                    <label class="flex-label">
                         <input class="check-input" type="checkbox" value="videos" name="check-group1">Videos
-                    </lable>
+                    </label>
                     
-                    <lable>
+                    <label class="flex-label">
                         <input class="check-input" type="checkbox" value="city-meetups" name="check-group1">City Meetups
-                    </lable>
+                    </label>
                     
-                    <lable>
+                    <label class="flex-label">
                         <input class="check-input" type="checkbox" value="wiki" name="check-group1">Wiki
-                    </lable>
+                    </label>
                     
-                    <lable>
+                    <label class="flex-label">
                         <input class="check-input" type="checkbox" value="forum" name="check-group1">Forum
-                    </lable>
+                    </label>
                    
-                    <lable>
+                    <label class="flex-label">
                         <input class="check-input" type="checkbox" value="additional-courses" name="check-group1">Additional Courses
-                    </lable>
+                    </label>
                 </fieldset>
             </div>
             <div class="survey-item">
-                <label for="comments"><p>Any comments or suggestions?</p></label>
+                <label for="comments"><p class="flex-label">Any comments or suggestions?</p></label>
                 <textarea  id="comments" class="textarea-input" placeholder="Enter your Comment here..."></textarea>
             </div>
             <div class="survey-item">
